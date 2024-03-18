@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+		<meta http-equiv="x-ua-compatible" content="ie=edge" />
+		<title>Boyington Oak Festival</title>
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<header>
+			<style>
+				/* Default height for small devices */
+				#intro {
+					height: 600px;
+					/* Margin to fix overlapping fixed navbar */
+					margin-top: 58px;
+				}
+				@media (max-width: 991px) {
+					#intro {
+						/* Margin to fix overlapping fixed navbar */
+						margin-top: 45px;
+					}
+				}
+			</style>
+			<!-- Navbar -->
+			<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+				<div class="container-fluid">
+					<!-- Navbar brand -->
+					<a
+						class="navbar-brand"
+						target="_blank"
+						href="https://boyingtonoaksociety.org/"
+						rel="noopener noreferrer"
+					>
+						<img
+							src="https:/img/logo/bos-transaprent-noshadows.png"
+							height="16"
+							alt=""
+							loading="lazy"
+							style="margin-top: -3px"
+						/>
+					</a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-mdb-toggle="collapse"
+						data-mdb-target="#navbarExample01"
+						aria-controls="navbarExample01"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<i class="fas fa-bars"></i>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarExample01">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+							<li class="nav-item active">
+								<a
+									class="nav-link"
+									aria-current="page"
+									href="https://boyingtonoaksociety.org"
+									rel="noopener noreferrer"
+									>Home</a
+								>
+							</li>
+						</ul>
+
+						<ul class="navbar-nav d-flex flex-row">
+							<!-- Icons -->
+							<li class="nav-item me-3 me-lg-0">
+								<a
+									class="nav-link"
+									href="https://www.instagram.com/boyingtonoaksociety"
+									rel="nofollow"
+									target="_blank"
+								>
+									<i class="fab fa-instagram"></i>
+								</a>
+							</li>
+							<li class="nav-item me-3 me-lg-0">
+								<a
+									class="nav-link"
+									href="https://www.facebook.com/boyingtonoaksociety"
+									rel="nofollow"
+									target="_blank"
+								>
+									<i class="fab fa-facebook-f"></i>
+								</a>
+							</li>
+							<li class="nav-item me-3 me-lg-0">
+								<a
+									class="nav-link"
+									href="https://twitter.com/BoyingtonOak"
+									rel="nofollow"
+									target="_blank"
+								>
+									<i class="fab fa-twitter"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<!-- Navbar -->
+			<div
+				id="intro"
+				class="p-5 text-center bg-image shadow-1-strong"
+				style="background-image: url('./img/BG-boyington-oak-main.jpg');">
+				<div class="mask" style="background-color: rgba(0, 0, 0, 0.7)">
+					<div
+						class="d-flex justify-content-center align-items-center h-100"
+					>
+						<div class="text-white px-4">
+							<h1 class="mb-3">The 4th Annual Boyington Oak Festival</h1>
+							<h1 class="mb-3">May 4th &amp; 5th, 2024</h1>
+							<h3
+								id="time-counter"
+								class="border border-light my-4 p-4"
+							></h3>
+							<!-- Display the countdown timer in an element -->
+							<script>
+								// Set the date we're counting down to
+								var countDownDate = new Date(
+									'May 4, 2024 13:00'
+								).getTime();
+
+								// Update the count down every 1 second
+								var x = setInterval(function () {
+									// Get today's date and time
+									var now = new Date().getTime();
+
+									// Find the distance between now and the count down date
+									var distance = countDownDate - now;
+
+									// Time calculations for days, hours, minutes and seconds
+									var days = Math.floor(
+										distance / (1000 * 60 * 60 * 24)
+									);
+									var hours = Math.floor(
+										(distance % (1000 * 60 * 60 * 24)) /
+											(1000 * 60 * 60)
+									);
+									var minutes = Math.floor(
+										(distance % (1000 * 60 * 60)) / (1000 * 60)
+									);
+									var seconds = Math.floor(
+										(distance % (1000 * 60)) / 1000
+									);
+
+									// Display the result in the element with id="time-counter"
+									document.getElementById('time-counter').innerHTML =
+										days + 'd ' + hours + 'h ' + minutes + 'm ';
+									//'m ' +
+									//seconds +
+									//'s ';
+
+									// If the count down is finished, write some text
+									if (distance < 0) {
+										clearInterval(x);
+										document.getElementById(
+											'time-counter'
+										).innerHTML = 'SEE YOU NEXT YEAR!';
+									}
+								}, 1000);
+							</script>
+							<p>Until the start of events</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="mt-5">
+			<div class="container">
+				<section>
+					<div class="row">
+						<br />
+						<h4>
+							<center>
+								<strong>The Boyington Oak History</strong>
+							</center>
+						</h4>
+						<br>
+						<p class="text-muted">
+							Journeyman printer, poet, and musician, Charles Boyington,
+							a nineteen-year-old young man, was hanged for the murder of
+							his critically ill best friend. From the gallows he
+							predicted a great oak would grow from his grave as proof of
+							his innocence. It still stands almost 200 years later here
+							in beautiful Mobile, Alabama.
+						</p>
+						<br>
+						<h4>
+							<center>
+								<strong>The Boyington Oak Festival</strong>
+							</center>
+						</h4>
+						<br>
+						<p class="text-muted">
+							The 4th Annual Boyington Oak Festival will be held May 4th
+							&amp; 5th, 2024 at the
+							<a
+								href="https://www.historicoakleigh.com/"
+								target="_blank"
+								rel="noopener noreferrer"
+								>Oakleigh House Museum</a
+							>. Come by and meet Mary S. Palmer, author of
+							<a
+								href="https://www.amazon.com/Boyington-Oak-Injustice-Mary-Palmer/dp/1954693222/"
+								target="_blank"
+								rel="noopener noreferrer"
+								>Boyington Oak: A Grave Injustice</a
+							>
+							and book editor Shannon S. Brown. Treat yourself to drinks, boarding
+							house crackers, and pick up some of the amazing jam from
+							<a
+								href="https://www.facebook.com/sojamdelicious/"
+								target="_blank"
+								rel="noopener noreferrer"
+								>So Jam Delicious</a
+							>. Enjoy a guided tour with
+							<a
+								href="https://www.gctbus.com/"
+								target="_blank"
+								rel="noopener noreferrer"
+								>Gulf Coast Historic Trolley Tours</a
+							>
+							as they retrace the last walk of Charles R.S. Boyington. Come and experience
+							 our growing celebration of the tale surrounding one of Mobile's treasures.
+						</p>
+						<br>
+						  <!--Section: Thanks-->
+						  <div class="d-flex justify-content-center align-items-center h-100">
+							<section class="text-center">
+										<div class="card border border-primary">
+											<div class="card-header bg-white py-4">
+												<h4>
+													<center>
+														<strong>Special Thanks</strong>
+													</center>
+												</h4>
+												<p class="text-muted">
+													We wish to thank the 	<a
+													href="https://www.mobilecountyal.gov/government/meet-the-commissioners/"
+													target="_blank"
+													rel="noopener noreferrer"
+													>Mobile County Commission</a
+												> and the 	<a
+												href="https://www.cityofmobile.org/government/city-council/"
+												target="_blank"
+												rel="noopener noreferrer"
+												>Mobile City Council</a
+											> for their welcome support.
+											</p>
+											</div>
+                                        </div>
+								</div>
+							</section>
+							<br />
+							<!--Section: Pricing-->						       
+							<div class="d-flex justify-content-center align-items-center h-100">
+							<section class="text-center">
+								<h4 class="mb-4"><strong>Event Package</strong></h4>
+										<div class="card border border-primary">
+											<div class="card-header bg-white py-3">
+												<p class="text-uppercase small mb-2">
+													<strong>(Saves $20 Over Individual Purchases)</strong>
+												</p>
+												<h5 class="mb-0">$55</h5>
+											</div>
+											<div class="card-body">
+												<ul class="list-group list-group-flush">
+													<li class="list-group-item">
+														5th Production of the Play
+													</li>
+													<li class="list-group-item">
+														Oakleigh House Museum Tour
+													</li>
+													<li class="list-group-item">
+														"Footsteps of Boyington" Historical
+														Trolly Tour
+													</li>
+													<li class="list-group-item">
+														Signed copy of
+														<em
+															>Boyington Oak: A Grave
+															Injustice</em
+														>
+													</li>
+												</ul>
+											</div>
+											<div class="card-footer bg-white py-3">
+												<a
+													role="button"
+													class="btn btn-primary btn-sm"
+													href="https://www.historicmobile.org/"
+													target="_blank"
+													rel="noopener noreferrer"
+													>contact for details
+												</a>
+											</div>
+										</div>
+									</div>
+									<br />
+									<div class="d-flex justify-content-center align-items-center h-100">
+										<section class="text-center">
+											<h4 class="mb-4"><strong>Individual Feature Pricing</strong></h4>
+													<div class="card border border-primary">
+														<div class="card-header bg-white py-3">
+															
+															<h5 class="mb-0">Prices Per Offering</h5>
+														</div>
+														<div class="card-body">
+															<ul class="list-group list-group-flush">
+																<li class="list-group-item">
+																	6th Production of the Play ($20)
+																</li>
+																<li class="list-group-item">
+																	Oakleigh House Museum Tour ($10)
+																</li>
+																<li class="list-group-item">
+																	"Footsteps of Boyington"
+																	Historical Trolly Tour ($25)
+																</li>
+																<li class="list-group-item">
+																	Signed copy of
+																	<em
+																		>Boyington Oak: A Grave
+																		Injustice</em> ($20)
+																</li>
+															</ul>
+														</div>
+													
+													</div>
+										</div>
+								</div>
+							</section>
+						</div>
+					</div>
+				</section>
+			</div>
+		</main>
+		<br />
+		<br />
+		<footer class="bg-light text-lg-start">
+			<div
+				class="text-center p-3"
+				style="background-color: rgba(0, 0, 0, 0.2)"
+			>
+				© 2024 Copyright:
+				<a
+					class="text-dark"
+					href="https://boyingtonoaksociety.org/"
+					target="_blank"
+					rel="noopener noreferrer"
+					>Boyington Oak Society</a
+				>
+			</div>
+		</footer>
+	</body>
+</html>
